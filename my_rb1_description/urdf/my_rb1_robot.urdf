@@ -1,12 +1,16 @@
 <?xml version="1.0" ?>
 
 <robot name="my_rb1_robot">
+
+    <!-- <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo> -->
     <!-- Link - base footprint -->
     <link name="base_footprint">
         <inertial>
-            <mass value="20" />
+            <mass value="0.5" />
             <origin xyz="0 0 0.3" rpy="0 0 0" />
-            <inertia ixx="1.5417" ixy="0" ixz="0" iyy="3.467" iyz="0" izz="4.742" />
+            <inertia ixx="0.005625" ixy="0" ixz="0" iyy="0.005625" iyz="0" izz="0" />
         </inertial>
 
         <!-- <collision>
@@ -35,9 +39,9 @@
     <!-- Link - base link -->
     <link name="base_link">
         <inertial>
-            <mass value="20" />
+            <mass value="19" />
             <origin xyz="0 0 0.15" rpy="0 0 0" />
-            <inertia ixx="1.5417" ixy="0" ixz="0" iyy="3.467" iyz="0" izz="4.742" />
+            <inertia ixx="0.4625" ixy="0" ixz="0" iyy="0.4625" iyz="0" izz="0.625" />
         </inertial>
 
         <collision>
@@ -70,7 +74,7 @@
         <inertial>
             <mass value="1" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.00099" ixy="0" ixz="0" iyy="0.00099" iyz="0" izz="0.000312"/>
         </inertial>
 
         <collision>
@@ -82,7 +86,7 @@
         <visual>
             <origin rpy="1.5707 0 0" xyz="0 0 0" />
             <geometry>
-                <cylinder length="0.025" radius="0.025"/>
+                <cylinder length="0.1" radius="0.025"/>
             </geometry>
             <material name="Red">
                 <color rgba="1 0 0 1" />
@@ -104,7 +108,7 @@
         <inertial>
             <mass value="1" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.00099" ixy="0" ixz="0" iyy="0.00099" iyz="0" izz="0.000312"/>
         </inertial>
 
         <collision>
@@ -116,7 +120,7 @@
         <visual>
             <origin rpy="1.5707 0 0" xyz="0 0 0" />
             <geometry>
-                <cylinder length="0.025" radius="0.025"/>
+                <cylinder length="0.1" radius="0.025"/>
             </geometry>
             <material name="Red">
                 <color rgba="1 0 0 1" />
@@ -138,7 +142,7 @@
         <inertial>
             <mass value="1" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.00025" ixy="0" ixz="0" iyy="0.00025" iyz="0" izz="0.00025"/>
         </inertial>
 
         <collision>
@@ -150,7 +154,7 @@
         <visual>
             <origin rpy="1.5707 0 0" xyz="0 0 0" />
             <geometry>
-                <cylinder length="0.025" radius="0.025"/>
+                <sphere  radius="0.025"/>
             </geometry>
             <material name="Blue">
                 <color rgba="0 0 1 1" />
@@ -172,7 +176,7 @@
         <inertial>
             <mass value="1" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.00025" ixy="0" ixz="0" iyy="0.00025" iyz="0" izz="0.00025"/>
         </inertial>
 
         <collision>
@@ -184,7 +188,7 @@
         <visual>
             <origin rpy="1.5707 0 0" xyz="0 0 0" />
             <geometry>
-                <cylinder length="0.025" radius="0.025"/>
+                <sphere  radius="0.025"/>
             </geometry>
             <material name="Blue">
                 <color rgba="0 0 1 1" />
@@ -204,9 +208,9 @@
     <!-- Link - front_laser -->
     <link name="front_laser">
         <inertial>
-            <mass value="1" />
+            <mass value="0.5" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.005625" ixy="0" ixz="0" iyy="0.005625" iyz="0" izz="0.03125"/>
         </inertial>
 
         <!-- <collision>
